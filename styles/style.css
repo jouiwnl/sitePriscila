@@ -1,0 +1,197 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-info {
+    background-color:#852828;
+    border-color: #852828;
+}
+
+.btn-info:hover {
+    background-color:#c02323;
+    border-color: #c02323;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: rgb(214, 214, 214);
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.second-title {
+    color: white;
+}
+
+.logo-icon {
+    padding-left: 10px;
+    width: 70px;
+    height: 40px;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #a83232;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #852828;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #852828;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #000;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background:#852828;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #852828;
+}
+
+.logo-sidebar {
+    padding-left: 15px;
+}
+
+.logo img {
+    width: 95%;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.image-initial {
+    color: white;
+}
+
+.card-text {
+    color: rgb(73, 73, 73); 
+}
+
+#instagram-embed-0, #instagram-embed-1, #instagram-embed-2, #instagram-embed-3, #instagram-embed-4, 
+#instagram-embed-5, #instagram-embed-6, #instagram-embed-7, #instagram-embed-8,
+#instagram-embed-9, #instagram-embed-10, #instagram-embed-11, #instagram-embed-12,
+#instagram-embed-13, #instagram-embed-14, #instagram-embed-15, #instagram-embed-16,
+#instagram-embed-17, #instagram-embed-18, #instagram-embed-19, #instagram-embed-20,
+#instagram-embed-21, #instagram-embed-22, #instagram-embed-23, #instagram-embed-24,
+#instagram-embed-25, #instagram-embed-26, #instagram-embed-27, #instagram-embed-28,
+#instagram-embed-29, #instagram-embed-30, #instagram-embed-31, #instagram-embed-32,
+#instagram-embed-33, #instagram-embed-34, #instagram-embed-35, #instagram-embed-36,
+#instagram-embed-37, #instagram-embed-38, #instagram-embed-39, #instagram-embed-40  {
+    max-height: 400px;
+    max-width: 370px;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: 0px;
+    }
+    #sidebar.active {
+        margin-left: -250px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
